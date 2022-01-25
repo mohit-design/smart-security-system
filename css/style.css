@@ -1,0 +1,175 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Nunito-Light"; src: url("../fonts/Nunito-Light.ttf"); }
+@font-face { font-family: "Nunito-Regular"; src: url("../fonts/Nunito-Regular.ttf"); }
+@font-face { font-family: "Nunito-Medium"; src: url("../fonts/Nunito-Medium.ttf"); }
+@font-face { font-family: "Nunito-SemiBold"; src: url("../fonts/Nunito-SemiBold.ttf"); }
+@font-face { font-family: "Nunito-Bold"; src: url("../fonts/Nunito-Bold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 50px 15px; }
+.d-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.align-items-center { -webkit-align-items: center; align-items: center; }
+.justify-content-flex-end { justify-content: flex-end; }
+.section-heading > h2 { color: #da251c; font: 3rem/1.42857143 "Nunito-Bold"; margin-bottom: 15px; padding-top: 15px; position: relative; text-transform: uppercase; }
+.section-heading > h2::before { background-color: #da251c; content: ""; display: block; height: 2px; left: 0; position: absolute; top: 0; width: 100px; }
+p,
+a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
+.read-more > a { color: #da251c; display: inline-block; font: 1.8rem/1.4 "Nunito-Regular"; padding: 7px 35px 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
+.read-more > a > span:first-child,
+.read-more > a > span:nth-child(2),
+.read-more > a > span:nth-child(3),
+.read-more > a > span:last-child { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.read-more > a > span { background-color: #da251c; position: absolute; z-index: 1; }
+.read-more > a > span:first-child { height: 1px; left: -15px; top: 0; width: 100%; }
+.read-more > a > span:nth-child(2) { height: 100%; left: 0; top: -15px; width: 1px; }
+.read-more > a > span:nth-child(3) { height: 100%; right: 0; top: 15px; width: 1px; }
+.read-more > a > span:last-child { bottom: 0; height: 1px; left: 15px; width: 100%; }
+.read-more > a:hover > span:first-child,
+.read-more > a:hover > span:last-child { left: 0; }
+.read-more > a:hover > span:nth-child(2),
+.read-more > a:hover > span:nth-child(3) { top: 0; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+	/*------- Desktop Navigationbar Menu Section Starts -------*/
+
+.bg-navbar-menu-desktop { background-color: #ffffff; left: 0; padding: 0 15px; position: fixed; top: 0; width: 100%; z-index: 10; }
+.header-logo > a { display: inline-block; }
+.header-logo > a > img { width: 120px; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 50px; }
+.menu-listing-desktop > li:last-child { margin-right: 0; }
+.menu-listing-desktop > li > a { background-color: transparent; display: block; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #da251c; }
+
+	/*------- Desktop Navigationbar Menu Section Ends -------*/
+
+	/*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.banner-slick-slider-home .slick-slide img { height: 100vh; width: 100%; }
+.banner-slick-slider-home .slick-dots { bottom: 50px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: auto; }
+.banner-slick-slider-home .slick-dots li {
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+.banner-slick-slider-home .slick-dots li button {
+	background-color: #ffffff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	height: 12px;
+	line-height: 12px;
+	margin: 0;
+	opacity: 0.3;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: 12px;
+}
+.banner-slick-slider-home .slick-dots li.slick-active button {
+	-webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+	-ms-border-radius: 27px;
+	-o-border-radius: 27px;
+	border-radius: 27px;
+	opacity: 1;
+	width: 12px;
+}
+.banner-slick-slider-home .slick-dots li button::before {
+	content: '';
+	display: block;
+}
+
+	/*------- Slider Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.about-img-home { display: block; padding: 10px; position: relative; }
+.about-img-home::before {
+  background: -webkit-linear-gradient(130deg,#da251c,#ffffff 41.07%,#ffffff 76.05%);
+  background: -moz-linear-gradient(130deg,#da251c,#ffffff 41.07%,#ffffff 76.05%);
+  background: -ms-linear-gradient(130deg,#da251c,#ffffff 41.07%,#ffffff 76.05%);
+  background: -o-linear-gradient(130deg,#da251c,#ffffff 41.07%,#ffffff 76.05%);
+  background: linear-gradient(130deg,#da251c,#ffffff 41.07%,#ffffff 76.05%);
+  content: "";
+  height: calc(100% + 2px);
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: -1;
+}
+.about-info-home > p { margin-bottom: 50px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Footer Section Starts -------*/
+
+.bg-footer-home { background-color: #da251c; }
+.footer-heading > h3 { color: #ffffff; font: 2.4rem/1.42857143 "Nunito-Bold"; margin-bottom: 30px; padding-bottom: 15px; position: relative; text-transform: uppercase; }
+.footer-heading > h3::after { background-color: #ffffff; bottom: 0; content: ""; display: block; height: 1px; left: 0; position: absolute; width: 100px; }
+.footer-heading > p { color: #ffffff; font: 1.8rem/1.7 "Nunito-Light"; margin-bottom: 30px; }
+.footer-listing > li { display: block; margin-bottom: 10px; }
+.footer-listing > li:last-child { margin-bottom: 0; }
+.footer-listing > li > a { color: #ffffff; display: block; font: 1.8rem/1.5 "Nunito-Light"; }
+.footer-listing > li > address > p { color: #ffffff; }
+.footer-listing > li > a:hover { color: #e7cc07; }
+.footer-contact-listing { margin-bottom: 30px; }
+.footer-contact-listing > li { padding-left: 35px; position: relative; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { color: #ffffff; content: "\f3c5"; display: block; font-family: "Font Awesome 5 Free"; font-size: 1.8rem; font-weight: 900; left: 0; position: absolute; top: 5px; }
+.footer-contact-listing > li:nth-child(2)::before { content: "\f879"; }
+.footer-contact-listing > li:nth-child(3)::before { content: "\f0e0"; }
+.footer-social-listing > li { display: inline-block; margin-right: 15px; }
+.footer-social-listing > li:last-child { margin-right: 0; }
+.footer-social-listing > li > a { background-color: #ffffff; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; -webkit-box-shadow: inset 0 0 0 0 #e7cc07; -moz-box-shadow: inset 0 0 0 0 #e7cc07; -ms-box-shadow: inset 0 0 0 0 #e7cc07; -o-box-shadow: inset 0 0 0 0 #e7cc07; box-shadow: inset 0 0 0 0 #e7cc07; display: block; height: 40px; text-align: center; width: 40px; }
+.footer-social-listing > li > a > i { color: #da251c; font-size: 1.8rem; line-height: 40px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.footer-social-listing > li > a:hover { -webkit-box-shadow: inset 0 40px 0 0 #e7cc07; -moz-box-shadow: inset 0 40px 0 0 #e7cc07; -ms-box-shadow: inset 0 40px 0 0 #e7cc07; -o-box-shadow: inset 0 40px 0 0 #e7cc07; box-shadow: inset 0 40px 0 0 #e7cc07; }
+.footer-social-listing > li > a:hover > i { color: #ffffff; }
+.footer-horizontal-line { border-top: 1px solid #eee; margin: 30px 0; }
+.copyright-info > p,
+.designed-info > p { color: #ffffff; font-size: 1.6rem; }
+.copyright-info > p > a,
+.designed-info > p > a { color: #e1b744; }
+.copyright-info > p > a:hover,
+.designed-info > p > a:hover { color: #ffffff; }
+
+	/*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
