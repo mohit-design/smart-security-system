@@ -1,5 +1,13 @@
 @media only screen and (max-width: 767px) {
 
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 15px; }
+.d-block-mobile { display: block; }
+.section-heading > h2 { font-size: 2.4rem; }
+
+/*------- Common CSS Ends -------*/
+
 /*------- Home Page Starts -------*/
 
   /*------- Desktop Logo and Navbar Menu Section Starts -------*/
