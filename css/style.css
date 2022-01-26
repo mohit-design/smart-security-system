@@ -33,15 +33,15 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 .d-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 .align-items-center { -webkit-align-items: center; align-items: center; }
 .justify-content-flex-end { justify-content: flex-end; }
-.section-heading > h2 { color: #da251c; font: 3rem/1.42857143 "Nunito-Bold"; margin-bottom: 15px; padding-top: 15px; position: relative; text-transform: uppercase; }
-.section-heading > h2::before { background-color: #da251c; content: ""; display: block; height: 2px; left: 0; position: absolute; top: 0; width: 100px; }
+.section-heading > h2 { color: #272727; font: 3rem/1.42857143 "Nunito-Bold"; margin-bottom: 15px; position: relative; text-transform: uppercase; }
+.section-heading > h2 > span { color: #da251c; }
 p,
 a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 .read-more > a { color: #da251c; display: inline-block; font: 1.8rem/1.4 "Nunito-Regular"; padding: 7px 35px 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
 .read-more > a > span:first-child,
 .read-more > a > span:nth-child(2),
 .read-more > a > span:nth-child(3),
-.read-more > a > span:last-child { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.read-more > a > span:last-child { -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
 .read-more > a > span { background-color: #da251c; position: absolute; z-index: 1; }
 .read-more > a > span:first-child { height: 1px; left: -15px; top: 0; width: 100%; }
 .read-more > a > span:nth-child(2) { height: 100%; left: 0; top: -15px; width: 1px; }
@@ -56,23 +56,44 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 
 /*------- Home Page Starts -------*/
 
-	/*------- Desktop Navigationbar Menu Section Starts -------*/
+	/*------- Mobile Logo and Burger Menu Section Starts -------*/
 
-.bg-navbar-menu-desktop { background-color: #ffffff; left: 0; padding: 0 15px; position: fixed; top: 0; width: 100%; z-index: 10; }
-.header-logo > a { display: inline-block; }
-.header-logo > a > img { width: 120px; }
-.menu-listing-desktop > li { display: inline-block; margin-right: 50px; }
+.bg-logo-burger-menu-mobile,
+.fixed-navbar-menu-mobile { display: none; }
+
+	/*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background-color: #ffffff; display: block; left: 0; padding: 5px 30px; position: -webkit-sticky; position: sticky; top: 0; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; z-index: 11; }
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > img { width: 120px; }
+.header-logo-desktop > a > p { color: #272727; font: 3rem/1.2 "Nunito-Black"; letter-spacing: 0.5px; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #da251c; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 25px; }
 .menu-listing-desktop > li:last-child { margin-right: 0; }
-.menu-listing-desktop > li > a { background-color: transparent; display: block; }
+.menu-listing-desktop > li > a { color: #272727; display: block; font: 1.6rem/1.2 "Nunito-Light"; text-transform: uppercase; }
 .menu-listing-desktop > li.active > a,
 .menu-listing-desktop > li > a:hover { color: #da251c; }
+.talk-to-expert > svg { float: left; }
+.talk-to-expert-details { float: left; margin-left: 10px; }
+.talk-to-expert-details > h5 { color: #272727; font: 1.4rem/1.2 "Nunito-Light"; margin-bottom: 5px; text-transform: uppercase; }
+.talk-to-expert-details > h4 { color: #da251c; font: 1.8rem/1.2 "Nunito-Regular"; }
 
-	/*------- Desktop Navigationbar Menu Section Ends -------*/
+	/*------- Desktop Logo and Navbar Menu Section Ends -------*/
 
 	/*------- Slider Section Starts -------*/
 
-.bg-slider-home { padding: 0; }
-.banner-slick-slider-home .slick-slide img { height: 100vh; width: 100%; }
+.bg-slider-home { padding: 0; position: relative; z-index: 10; }
+.slider-info-home { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 100%; z-index: 11; }
+.slider-info-home > h1 { color: #ffffff; font: 6rem/1 "Nunito-Bold"; margin-bottom: 30px; text-align: center; text-transform: uppercase; }
+.slider-info-home > h1 > span { color: #e7cc07; }
+.slider-info-home > h1 > span:last-child { color: #da251c; }
+.slider-info-home > p { color: #ffffff; font: 1.8rem/1 "Nunito-Light"; letter-spacing: 4px; text-align: center; }
+.banner-slick-slider-home.slick-dotted.slick-slider { margin-bottom: 0; }
+.banner-slick-slider-home.slick-initialized .slick-slide { margin-bottom: -5px; }
+.banner-slick-slider-home .slick-slide img { height: calc(100vh - 116px); width: 100%; }
 .banner-slick-slider-home .slick-dots { bottom: 50px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: auto; }
 .banner-slick-slider-home .slick-dots li {
 	cursor: pointer;
@@ -117,6 +138,29 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 
 	/*------- Slider Section Ends -------*/
 
+	/*------- Quick Inquiry Section Starts -------*/
+
+.bg-quick-inquiry { background-color: #da251c; }
+.quick-inquiry-section-heading-home > h2 { color: #ffffff; line-height: 1.2; margin-bottom: 0; }
+.quick-inquiry-section-heading-home > h2 > span { color: #e7cc07; display: block; }
+.form-control-qi { border: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; color: #272727; font: 1.6rem/1.4285143 "Nunito-Regular"; height: 40px; letter-spacing: 1px; padding: 6px 12px 10px; }
+.form-control-qi::placeholder {
+	color: #272727;
+	opacity: 1;
+}
+.form-control-qi:-ms-input-placeholder {
+	color: #272727;
+}
+.form-control-qi::-ms-input-placeholder {
+	color: #272727;
+}
+.btn-submit-inquiry { background-color: #e7cc07; color: #272727; display: block; font: 1.6rem/1.4285143 "Nunito-Regular"; height: 40px; padding: 6px 12px 12px; text-transform: uppercase; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
+.btn-submit-inquiry:hover,
+.btn-submit-inquiry:focus,
+.btn-submit-inquiry:active:focus { background-color: #272727; color: #ffffff; outline: 0; }
+
+	/*------- Quick Inquiry Section Ends -------*/
+
 	/*------- About Us Section Starts -------*/
 
 .about-img-home { display: block; padding: 10px; position: relative; }
@@ -138,9 +182,64 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 
 	/*------- About Us Section Ends -------*/
 
+	/*------- Products Section Starts -------*/
+
+.bg-products-home { background-color: #f7f7f7; padding: 50px 15px 70px; }
+.product-section-heading-home > h2 { margin-bottom: 50px; }
+.slick-slider-products-home.slick-initialized .slick-slide { padding: 0 15px; }
+.box-product-img-info-home { background-color: #ffffff; border: 1px solid #dddddd; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -moz-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -ms-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -o-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); margin-bottom: 50px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.box-product-img-info-home:hover { background-color: #f7f7f7; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.box-product-img-info-home > img { margin: 0 auto; padding: 30px; }
+.box-product-info-home > h3 { background-color: #dddddd; color: #272727; font: 2.4rem/1.5 "Nunito-Medium"; padding: 5px 0 10px; }
+.box-product-info-home > p { margin-bottom: 15px; padding: 15px; }
+.box-product-info-home > a { color: #da251c; display: inline-block; margin-bottom: 15px; }
+
+		/*------- Slick Slider Arrow CSS Starts -------*/
+
+.slick-slider-products-home .slick-prev { left: auto; right: 75px; top: -10%; }
+.slick-slider-products-home .slick-next { right: 15px; top: -10%; }
+.slick-slider-products-home .slick-prev.slick-disabled,
+.slick-slider-products-home .slick-next.slick-disabled { border: 1px solid #cccccc; cursor: not-allowed; }
+.slick-slider-products-home .slick-prev,
+.slick-slider-products-home .slick-next { border: 1px solid #da251c; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; height: 50px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 50px; }
+.slick-slider-products-home .slick-prev.slick-disabled:hover,
+.slick-slider-products-home .slick-prev.slick-disabled:focus,
+.slick-slider-products-home .slick-next.slick-disabled:hover,
+.slick-slider-products-home .slick-next.slick-disabled:focus { background-color: transparent; }
+.slick-slider-products-home .slick-prev:hover,
+.slick-slider-products-home .slick-prev:focus,
+.slick-slider-products-home .slick-next:hover,
+.slick-slider-products-home .slick-next:focus { background-color: #da251c; color: #ffffff; }
+.slick-slider-products-home .slick-prev::before,
+.slick-slider-products-home .slick-next::before { color: #da251c; font-family: "Font Awesome 5 Free"; font-weight: 900; opacity: 1; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.slick-slider-products-home .slick-prev::before { content: "\f053"; }
+.slick-slider-products-home .slick-next::before { content: "\f054"; }
+.slick-slider-products-home .slick-prev.slick-disabled::before,
+.slick-slider-products-home .slick-next.slick-disabled::before,
+.slick-slider-products-home .slick-prev.slick-disabled:hover::before,
+.slick-slider-products-home .slick-next.slick-disabled:hover::before,
+.slick-slider-products-home .slick-prev.slick-disabled:focus::before,
+.slick-slider-products-home .slick-next.slick-disabled:focus::before { color: #cccccc; }
+.slick-slider-products-home .slick-prev:hover::before,
+.slick-slider-products-home .slick-next:hover::before,
+.slick-slider-products-home .slick-prev:focus::before,
+.slick-slider-products-home .slick-next:focus::before { color: #ffffff; }
+.slick-slider-products-home .slick-next.slick-disabled:before,
+.slick-slider-products-home .slick-prev.slick-disabled:before { opacity: 1; }
+
+		/*------- Slick Slider Arrow CSS Ends -------*/
+
+	/*------- Products Section Ends -------*/
+
+	/*------- Products Videos Section Starts -------*/
+
+.yt-video-home { border: 1px solid #dddddd; height: 400px; padding: 10px; margin-bottom: 50px; width: 100%; }
+
+	/*------- Products Videos Section Ends -------*/
+
 	/*------- Footer Section Starts -------*/
 
-.bg-footer-home { background-color: #da251c; }
+.bg-footer-home { background-color: #040f28; }
 .footer-heading > h3 { color: #ffffff; font: 2.4rem/1.42857143 "Nunito-Bold"; margin-bottom: 30px; padding-bottom: 15px; position: relative; text-transform: uppercase; }
 .footer-heading > h3::after { background-color: #ffffff; bottom: 0; content: ""; display: block; height: 1px; left: 0; position: absolute; width: 100px; }
 .footer-heading > p { color: #ffffff; font: 1.8rem/1.7 "Nunito-Light"; margin-bottom: 30px; }
@@ -159,14 +258,17 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 .footer-social-listing > li { display: inline-block; margin-right: 15px; }
 .footer-social-listing > li:last-child { margin-right: 0; }
 .footer-social-listing > li > a { background-color: #ffffff; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; -webkit-box-shadow: inset 0 0 0 0 #e7cc07; -moz-box-shadow: inset 0 0 0 0 #e7cc07; -ms-box-shadow: inset 0 0 0 0 #e7cc07; -o-box-shadow: inset 0 0 0 0 #e7cc07; box-shadow: inset 0 0 0 0 #e7cc07; display: block; height: 40px; text-align: center; width: 40px; }
-.footer-social-listing > li > a > i { color: #da251c; font-size: 1.8rem; line-height: 40px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.footer-social-listing > li:first-child > a { background-color: #1877f2; }
+.footer-social-listing > li:nth-child(2) > a { background-color: #1da1f2; }
+.footer-social-listing > li:nth-child(3) > a { background-color: #ff0000; }
+.footer-social-listing > li > a > i { color: #ffffff; font-size: 1.8rem; line-height: 40px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
 .footer-social-listing > li > a:hover { -webkit-box-shadow: inset 0 40px 0 0 #e7cc07; -moz-box-shadow: inset 0 40px 0 0 #e7cc07; -ms-box-shadow: inset 0 40px 0 0 #e7cc07; -o-box-shadow: inset 0 40px 0 0 #e7cc07; box-shadow: inset 0 40px 0 0 #e7cc07; }
 .footer-social-listing > li > a:hover > i { color: #ffffff; }
 .footer-horizontal-line { border-top: 1px solid #eee; margin: 30px 0; }
 .copyright-info > p,
 .designed-info > p { color: #ffffff; font-size: 1.6rem; }
 .copyright-info > p > a,
-.designed-info > p > a { color: #e1b744; }
+.designed-info > p > a { color: #e7cc07; }
 .copyright-info > p > a:hover,
 .designed-info > p > a:hover { color: #ffffff; }
 
