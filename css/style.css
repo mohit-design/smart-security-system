@@ -186,6 +186,8 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
   width: calc(100% + 2px);
   z-index: -1;
 }
+.about-img-home-dd { display: block; }
+.about-img-home-md { display: none; }
 .about-info-home > p { margin-bottom: 50px; }
 
 	/*------- About Us Section Ends -------*/
@@ -277,6 +279,7 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 .footer-social-listing > li > a:hover > i { color: #040f28; }
 .footer-horizontal-line { border-top: 1px solid #eee; margin: 30px 0; }
 .copyright-info > p,
+.copyright-info > p > a,
 .designed-info > p { color: #ffffff; font-size: 1.6rem; }
 .copyright-info > p > a,
 .designed-info > p > a { color: #e7cc07; }
@@ -328,6 +331,48 @@ a { color: #272727; font: 1.8rem/1.7 "Nunito-Light"; }
 	/*------- Why Choose Us Section Ends -------*/
 
 /*------- About Us Page Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+	/*------- Products Information Section Starts -------*/
+
+.bg-products-info-pp { padding: 150px 15px; }
+.box-product-img-info-pp { background-color: #ffffff; border: 1px solid #dddddd; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -moz-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -ms-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); -o-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 15%); margin-bottom: 30px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.box-product-img-info-pp:hover { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.box-product-img-pp { height: 250px; margin: 0 auto; width: 250px; }
+.box-product-img-pp > img { -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; }
+.box-product-info-pp { border-top: 1px solid #dddddd; padding: 15px; }
+.box-product-info-pp > h4 { color: #040f28; font: 1.8rem/1.5 "Nunito-Medium"; min-height: 54px; margin-bottom: 5px; text-align: center; }
+.box-product-info-pp > a { color: #da251c; }
+
+	/*------- Products Information Section Ends -------*/
+
+/*------- Products Page Starts -------*/
+
+/*------- Product Details Page Starts -------*/
+
+	/*------- Product Details Section Starts -------*/
+
+.bg-product-details-pp { padding: 150px 15px; }
+.product-detail-section-heading-pp > h2 { color: #040f28; font: 3rem/1.2 "Nunito-SemiBold"; text-transform: uppercase; }
+.product-detail-section-heading-pp > h2 > span { color: #da251c; }
+.box-product-detail-img-info-pp { filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.1)); float: left; margin-bottom: 30px; padding: 15px; }
+.box-product-detail-img-info-pp::after { clear: both; }
+.box-product-detail-img-info-pp > img {
+	clip-path: circle(50% at 50% 50%);
+	float: left; 
+	height: 250px;
+	margin-right: 30px;
+	object-fit: cover;
+	shape-outside: circle(50% at 50% 50%);
+	width: 250px; 
+}
+.box-product-detail-img-info-pp > p { text-align: justify; }
+.get-quote-pp { margin: 30px 0 60px; }
+
+	/*------- Product Details Section Ends -------*/
+
+/*------- Product Details Page Ends -------*/
 
 /*------- Contact Us Page Starts -------*/
 

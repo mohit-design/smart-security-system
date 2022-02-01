@@ -18,10 +18,9 @@
 
   /*------- Mobile Logo and Burger Menu Section Starts -------*/
 
-.bg-logo-burger-menu-mobile { background-color: #ffffff; display: block; left: 0; padding: 5px 15px; position: fixed; top: 0; width: 100%; z-index: 10; }
+.bg-logo-burger-menu-mobile { background-color: #ffffff; display: block; left: 0; padding: 5px 15px; position: fixed; top: 0; width: 100%; z-index: 11; }
 .header-logo-mobile > a { display: inline-block; }
-.header-logo-mobile > a > p { color: #ff5240; font-family: "Nunito-Medium"; text-transform: uppercase; }
-.header-logo-mobile > a > p > span { color: #007df7; }
+.header-logo-mobile > a > img { width: 50px; }
 
     /*------- Mobile Hamburger Menu Section Starts -------*/
 
@@ -48,30 +47,324 @@
 .menu-listing-mobile > li:last-child { margin-bottom: 0; }
 .menu-listing-mobile > li > a { color: #000; display: block; font: 2.4rem/1 "Nunito-Light"; text-align: center; }
 .menu-listing-mobile > li.active > a,
-.menu-listing-mobile > li > a:hover { color: #ff5240; }
+.menu-listing-mobile > li > a:hover { color: #da251c; }
 
   /*------- Mobile Navbar Menu Section Ends -------*/
 
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { margin-top: 60px; padding: 0; }
+.slider-info-home { width: 90%; }
+.slider-info-home > h1 { font-size: 2.4rem; line-height: 1.4; }
+.slider-info-home > p { line-height: 1.4; }
+.banner-slick-slider-home .slick-slide img { height: calc(100vh - 60px); }
+
+	/*------- Slider Section Ends -------*/
+
+  /*------- Quick Inquiry Section Starts -------*/
+
+.bg-quick-inquiry { background-color: #da251c; }
+.quick-inquiry-section-heading-home > h2,
+.form-control-qi { margin-bottom: 15px; }
+
+	/*------- Quick Inquiry Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about-home { padding: 15px 15px 30px; }
+.about-img-home-dd { display: none; }
+.about-img-home-md { display: block; }
+.about-info-home > p { margin-bottom: 40px; }
+.read-more-about-home { margin-left: 15px; }
+
+	/*------- About Us Section Ends -------*/
+
+  /*------- Products Section Starts -------*/
+
+.read-more-products-home { margin-top: 15px; }
+
+		/*------- Slick Slider Arrow CSS Starts -------*/
+
+.slick-slider-products-home .slick-dots { bottom: 0; }
+.slick-slider-products-home .slick-dots li {
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+.slick-slider-products-home .slick-dots li button {
+	background-color: #da251c;
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	height: 12px;
+	line-height: 12px;
+	margin: 0;
+	opacity: 0.5;
+  -webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	width: 12px;
+}
+.slick-slider-products-home .slick-dots li.slick-active button {
+  -webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+	-ms-border-radius: 27px;
+	-o-border-radius: 27px;
+	border-radius: 27px;
+	opacity: 1;
+	width: 27px;
+}
+.slick-slider-products-home .slick-dots li button::before {
+	content: '';
+  display: block;
+}
+
+		/*------- Slick Slider Arrow CSS Ends -------*/
+
+	/*------- Products Section Ends -------*/
+
+  /*------- Products Videos Section Starts -------*/
+
+.bg-products-videos-home { padding: 15px 15px 60px; }
+.product-section-heading-home > h2 { margin-bottom: 15px; }
+.yt-video-home { margin-bottom: 15px; }
+.read-more-product-videos-home { margin-top: 15px; }
+
+	/*------- Products Videos Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-heading > h3 { margin-bottom: 15px; }
+.footer-social-listing,
+.footer-listing { margin-bottom: 15px; }
+.footer-contact-listing > li > a { word-break: break-all; }
+.footer-horizontal-line { margin: 10px 0 15px; }
+.copyright-info > p,
+.designed-info > p { text-align: center; }
+.designed-info > p { margin-top: 5px; }
+
+  /*------- Footer Section Ends -------*/
+
 /*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Inner Banner Section Starts -------*/
+
+.bg-inner-banner-ip { margin-top: 60px; }
+.section-heading-ip > h1 { font-size: 2.7rem; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.bg-about-ap { padding: 40px 15px 30px; }
+.about-info-ap > p,
+.why-choose-us-info > p { text-align: justify; width: 100%; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Extra Information Section Starts -------*/
+
+.bg-extra-info-ap { padding: 30px 15px 0; }
+.col-2-point-4 { width: 100%; }
+.extra-info-ap { margin-bottom: 30px; }
+.extra-info-ap > h2 { font-size: 2.4rem; }
+
+	/*------- Extra Information Section Ends -------*/
+
+	/*------- Why Choose Us Section Starts -------*/
+
+.bg-why-choose-us-ap { padding: 15px 15px 40px; }
+.why-choose-us-info > p { margin: 0 auto 30px; }
+.box-why-choose-us-offset-ap { margin-left: 0; }
+.box-why-choose-us-ap { margin-bottom: 15px; }
+
+	/*------- Why Choose Us Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Contact Us Information Section Starts -------*/
+
+.bg-contact-info-cp { padding: 50px 15px 60px; }
+.contact-info-heading > h2 { font-size: 2.4rem; margin-bottom: 30px; }
+.media-address-mail-call,
+.display-map-cp { margin-bottom: 30px; }
+.media-body-address-mail-call > h4 { font-size: 2.2rem; }
+.address-mail-call-icon { height: 50px; width: 50px; }
+.address-mail-call-icon > i { line-height: 50px; }
+.form-control-contact { margin-bottom: 15px; }
+
+	/*------- Contact Us Information Section Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 30px 15px; }
+.section-heading > h2 { font-size: 2.7rem; }
+
+/*------- Common CSS Ends -------*/
+
 /*------- Home Page Starts -------*/
 
+  /*------- Desktop Logo and Navbar Menu Section Starts -------*/
 
+.bg-logo-navbar-menu-desktop { padding: 5px 15px; }
+.header-logo-desktop > a > img { height: 80px; width: auto; }
+.menu-listing-desktop { justify-content: flex-end; }
+.talk-to-expert { display: none; }
+
+  /*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-social-listing,
+.footer-listing { margin-bottom: 30px; }
+.footer-horizontal-line { margin: 0 0 20px; }
+
+  /*------- Footer Section Ends -------*/
 
 /*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Inner Banner Section Starts -------*/
+
+.section-heading-ip > h1 { font-size: 3rem; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.bg-about-ap { padding: 70px 15px 30px; }
+.about-info-ap > p,
+.why-choose-us-info > p { text-align: justify; width: 100%; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Extra Information Section Starts -------*/
+
+.extra-info-ap > h4 { line-height: 1.4; }
+.extra-info-ap > h2 { font-size: 2.4rem; }
+
+	/*------- Extra Information Section Ends -------*/
+
+	/*------- Why Choose Us Section Starts -------*/
+
+.bg-why-choose-us-ap { padding: 30px 15px 40px; }
+.why-choose-us-info > p { margin: 0 auto 30px; }
+.box-why-choose-us-offset-ap { margin-left: 0; }
+
+	/*------- Why Choose Us Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Contact Us Information Section Starts -------*/
+
+.bg-contact-info-cp { padding: 100px 15px; }
+.contact-info-heading > h2 { font-size: 2.4rem; margin-bottom: 30px; }
+.media-address-mail-call,
+.display-map-cp { margin-bottom: 30px; }
+.media-body-address-mail-call > h4 { font-size: 2.2rem; }
+
+	/*------- Contact Us Information Section Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 30px 15px; }
+.section-heading > h2 { font-size: 2.7rem; }
+
+/*------- Common CSS Ends -------*/
+
 /*------- Home Page Starts -------*/
 
+  /*------- Desktop Logo and Navbar Menu Section Starts -------*/
 
+.bg-logo-navbar-menu-desktop { padding: 5px 15px; }
+.header-logo-desktop > a > img { height: 80px; width: auto; }
+.menu-listing-desktop { justify-content: flex-end; }
+.talk-to-expert { display: none; }
+
+  /*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-social-listing,
+.footer-listing { margin-bottom: 30px; }
+.footer-contact-listing > li > a { word-break: break-all; }
+.footer-horizontal-line { margin: 0 0 20px; }
+
+  /*------- Footer Section Ends -------*/
 
 /*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Inner Banner Section Starts -------*/
+
+.section-heading-ip > h1 { font-size: 3rem; }
+
+	/*------- Inner Banner Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.bg-about-ap { padding: 70px 15px 30px; }
+.about-info-ap > p,
+.why-choose-us-info > p { text-align: justify; width: 100%; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Extra Information Section Starts -------*/
+
+.extra-info-ap > h4 { line-height: 1.4; }
+.extra-info-ap > h2 { font-size: 2.4rem; }
+
+	/*------- Extra Information Section Ends -------*/
+
+	/*------- Why Choose Us Section Starts -------*/
+
+.bg-why-choose-us-ap { padding: 30px 15px 70px; }
+.why-choose-us-info > p { margin: 0 auto 30px; }
+
+	/*------- Why Choose Us Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Contact Us Information Section Starts -------*/
+
+.bg-contact-info-cp { padding: 140px 15px; }
+.contact-info-heading > h2 { font-size: 2.4rem; margin-bottom: 30px; }
+.media-address-mail-call,
+.display-map-cp { margin-bottom: 30px; }
+.media-body-address-mail-call > h4 { font-size: 2.2rem; }
+
+	/*------- Contact Us Information Section Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
 
 }
